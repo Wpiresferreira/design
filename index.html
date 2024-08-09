@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inder&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Design</title>
+  </head>
+  <body>
+    <div class="box">
+      <div class="box-items fa fa-map"></div>
+      <div class="box-items grow">Where to</div>
+      <div class="box-items fa fa-search"></div>
+    </div>
+
+    <div class="wrapper">
+      <div class="tabs">
+        <div class="tab">
+          <input
+            type="radio"
+            name="css-tabs"
+            id="tab-1"
+            checked
+            class="tab-switch"
+          />
+          <label for="tab-1" class="tab-label w-45">Leave at</label>
+          <div class="tab-content">
+            <input type="radio" class="input" name="at" id="start" checked />
+            <label class="label" for="start">Now</label>
+            <br />
+            <input type="radio" class="input" name="at" id="start2" />
+            <label class="label" for="start2">
+              <input type="time" value="13:45:25" />
+
+              <!-- :<input type="number"/>
+              <select>
+                  <option value="0">a.m.</option>
+                  <option value="1">p.m.</option>
+                </select> -->
+            </label>
+          </div>
+        </div>
+        <div class="tab">
+          <input type="radio" name="css-tabs" id="tab-2" class="tab-switch" />
+          <label for="tab-2" class="tab-label w-45">Arrive by</label>
+          <div class="tab-content flex">
+            <div class="flex grow">
+              <input class="h-20 t-center" type="time" value="13:45:25" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-transport">
+      <div class="p-2">How</div>
+      <div class="flex space-evenly">
+        <div>
+          <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+          <label for="vehicle1" class="fa fa-bus fa-xl"></label>
+        </div>
+        <div>
+          <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
+          <label for="vehicle2" class="fa fa-train fa-xl"></label>
+        </div>
+        <div>
+          <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
+          <label for="vehicle3" class="fa fa-male fa-xl"></label>
+        </div>
+        <div>
+          <input type="checkbox" id="vehicle4" name="vehicle4" value="bike" />
+          <label for="vehicle4" class="fa fa-bicycle fa-xl"></label>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-transport">
+      <div class="p-2 pb-4">Nearby</div>
+      <div class="flex column">
+        <div class="flex items-center space-between">
+          <h3 class="px-2 min-w-60">301 NB</h3>
+          <div class="px-2 fa fa-clock-o fa-xl"></div>
+          <h3 class="px-2">4 mim</h3>
+        </div>
+        <h5 class="px-2">on time</h5>
+      </div>
+
+      <div class="flex column">
+        <div class="flex items-center space-between">
+          <h3 class="px-2 min-w-60">Tuscany NB</h3>
+          <div class="px-2 fa fa-clock-o fa-xl"></div>
+          <h3 class="px-2">8 mim</h3>
+        </div>
+        <h5 class="px-2">on time</h5>
+      </div>
+      <div class="flex column">
+        <div class="flex items-center space-between">
+          <h3 class="px-2 min-w-60">3 SB</h3>
+          <div class="px-2 fa fa-clock-o fa-xl"></div>
+          <h3 class="px-2">9 mim</h3>
+        </div>
+        <h5 class="px-2">delayed</h5>
+      </div>
+    </div>
+
+    <div class="flex end">
+      <button class="button">Go</button>
+    </div>
+  </body>
+</html>
