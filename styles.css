@@ -1,13 +1,187 @@
-html {
-  background-color: #fffae0;
-  font-family: "Inder", sans-serif;
-  font-weight: 400;
+:root{
+  --color1: #fffae080;
+  --color10: #fffae0;
+  --color2: #f1b420;
+  --color3: red;
+  --color4: rgba(0, 0, 0, 0.85);
+  --color40: rgb(0, 0, 0);
+  background-color: var(--color4);
+  --back1: url('./img/OIP.jpeg');
+  --back2: url('./img/backgroung-train-dark.jpg');
+  /* background-image: var(--back1); */
+  color: var(--color10);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  letter-spacing: -1px;
+  font-stretch: ultra-condensed;
+}
+main:after {
+  background-repeat: no-repeat;
+  content : "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(./img/back.jpg); 
+  width: 100%;
+  height: 100%;
+  opacity : 0.2;
+  z-index: -1;
+}
+main{
+  height: 80vh;
+  background-color: var(--color1);
+  border-radius: 20px 20px 0 0 ; 
+}
+
+header{
+  position: relative;
+  /* background-color: var(--color4); */
+  background-color: var(--color4);
+  color: var(--color40);
+}
+
+header:after {
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  content : "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(./img/map.jpeg); 
+  width: 100%;
+  height: 100%;
+  opacity : 1;
+  z-index: -1;
+}
+
+
+.mode{
+  position: fixed;
+  color:var(--color10);
+  margin-left:90vw;
+  margin-top: 5vw;
+}
+
+
+.logo{
+  color: var(--color2);
+  rotate: -90deg;
+  text-align: center;
+
+}
+body{
+  display: flex;
+}
+
+.container-boxes{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+}
+
+.box-item{
+  width: 40vw;
+  height: 40vw;
+  text-align: center;
+  margin-top: 20px;
+  border-radius: 16px;
+  background-color: var(--color2);
   font-style: normal;
+  color: var(--color4);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.box-item-icons{
+  width: 40vw;
+  height: 40vw;
+  text-align: center;
+  margin-top: 20px;
+  border-radius: 16px;
+  background-color: var(--color2);
+  font-style: normal;
+  color: var(--color4);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.h1{
+  font-size: 40px;
+  font-weight: 800;
+}
+.h4{
+  font-size: 20px;
+  font-weight: 600;
+}
+.h5{
+  font-size: 14px;
+  font-weight: 600;
+}
+.minibox{
+  width: 14vw;
+  height: 14vw;
+  color: var(--color40);
+  background-color: var(--color10);
+  margin: 2vw;
+  font-size: xx-large;
+  border-radius: 8px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+
+}
+
+button{
+  width: 28vw;
+  font-size: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 8px;
+  border: none;
+  color: var(--color10);
+  background-color: var(--color3);
+}
+.img-container{
+  width: 12vw;
+  height: 12vw;
+  overflow: hidden;
+}
+.weather-img{
+  width: 100%;
+  height: 100%;
+
+        }
+
+
+
+
+.flex-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: xx-large;
+}
+
+.initial{
+width: 100vw;
+height: 10vh;
+animation-name: reduce;
+animation-duration: 0s;
+color: var(--color10);
 }
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0;
 }
 .input {
   padding: 12px;
@@ -194,4 +368,11 @@ input[type="checkbox"] {
   z-index: 2;
   opacity: 1;
   transition: all 0.35s;
+}
+
+@keyframes reduce {
+  0%   {height: 100vh;
+  width: 100vw;}
+  100% {height: 10vh;
+    width: 100vw;}
 }
