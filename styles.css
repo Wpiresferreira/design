@@ -175,6 +175,7 @@ width: 100vw;
 height: 10vh;
 animation-name: reduce;
 animation-duration: 4s;
+animation-delay: 4s;
 color: var(--color10);
 }
 body {
