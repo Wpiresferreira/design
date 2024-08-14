@@ -172,7 +172,7 @@ button{
 
 .initial{
 width: 100vw;
-height: 10vh;
+height: 100vh;
 animation-name: reduce;
 animation-duration: 4s;
 animation-delay: 4s;
