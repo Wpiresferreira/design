@@ -16,6 +16,58 @@
   letter-spacing: -1px;
   font-stretch: ultra-condensed;
 }
+.fa-search{
+  padding: 12px;
+  color: var(--color40);
+}
+.text{
+  color: var(--color40);
+}
+.search-bar{
+  margin: 8px;
+  background-color: var(--color1);
+  color: --var(--color40);
+  border-radius: 20px;
+}
+
+.search-space{
+  
+  background-color: var(--color4);
+  margin: 10px 25px 0 25px;
+  height: 30vh;
+  border-radius: 8px;
+  z-index: 6;
+}
+
+.search-space:after {
+  background-repeat: no-repeat;
+  content : "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(./img/back.jpg); 
+  width: 100%;
+  height: 100%;
+  opacity : 0.2;
+}
+
+.arrows{
+  position: absolute;
+  right: 0;
+  height: 60px;
+  background-color: #f1b420;
+}
+
+.from{
+  background-color: var(--color40);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 50px;
+  margin: 20px;
+  border-radius: 20px;
+}
+
 main:after {
   background-repeat: no-repeat;
   content : "";
@@ -89,15 +141,15 @@ justify-content: space-evenly;
   text-align: center;
   margin-top: 20px;
   border-radius: 16px;
-  background-color: var(--color2);
+  background-color: var(--color40);
   font-style: normal;
-  color: var(--color4);
+  color: var(--color10);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
-.box-item-icons{
+/* .box-item-icons{
   width: 40vw;
   height: 40vw;
   text-align: center;
@@ -111,10 +163,17 @@ justify-content: space-evenly;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+} */
+
+.thin{
+  font-weight: 100;
+}
+.pt-4{
+padding-top: 24px;
 }
 .h1{
-  font-size: 40px;
-  font-weight: 800;
+  font-size: 32px;
+  font-weight: 600;
 }
 .h4{
   font-size: 20px;
@@ -138,12 +197,33 @@ justify-content: space-evenly;
   justify-content: center;
 
 }
+.vehicle{
+  width: 30vw;
+  height: 15vw;
+  overflow: hidden;
+}
+.feedback{
+  padding: 10px;
+  width: 28vw;
+  height: 25vw;
+  overflow: hidden;
+}
+
+.car-image{
+  width: 100%;
+  height: 100%;
+}
+.feedback-image{
+  width: 100%;
+  height: 100%;
+}
 
 button{
   width: 28vw;
-  font-size: 16px;
+  font-size: 12px;
   padding-top: 10px;
   padding-bottom: 10px;
+  margin-top: 10px;
   border-radius: 8px;
   border: none;
   color: var(--color10);
@@ -174,7 +254,7 @@ button{
 width: 100vw;
 height: 10vh;
 animation-name: reduce;
-animation-duration: 8s;
+animation-duration: 0s;
 color: var(--color10);
 }
 body {
@@ -373,7 +453,7 @@ input[type="checkbox"] {
 @keyframes reduce {
   0%   {height: 100vh;
   width: 100vw;}
-  50% {height: 100vh;
+  70% {height: 100vh;
     width: 100vw;}
   100% {height: 10vh;
     width: 100vw;}
